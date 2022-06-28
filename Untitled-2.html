@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAIL BOT</title>
+    <link rel="stylesheet" href="Untitled-2.css" />
+</head>
+<body>
+    <section id="section">
+        <marquee direction="right" id="moving">
+            <p>Welcome to RailBot Website. Now Book your tickets securely and conveniently and travel around. Happy Travels ;)</p>
+            </marquee>
+    
+    <div id="start">
+        <p><a href="file:///C:/Users/kumar/OneDrive/Desktop/xyz/Untitled-1.html" style="color:white">Indian Railway</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="file:///C:/Users/kumar/OneDrive/Desktop/xyz/Untitled-3.html?username=sahil20115%40iiitd.ac.in&num=3424332" style="color: red">Employee Login</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <a href="file:///C:/Users/kumar/OneDrive/Desktop/xyz/Untitled-2.html?username=&pwd=" style="color: red">Login</a></p>
+    </div>
+    </section>
+
+    <div id="sahil">
+        <a>Rail Bot &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://contents.irctc.co.in/en/contact.html" style="color: red">Contact Us</a>
+        <div id="image">
+        </div>
+    </div>
+
+    <section id="login">
+        <div id="first"><p>Login Page</p></div>
+        <form id="second">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <br>
+            <br>
+
+            <label for="pwd">Enter Password:</label>
+            <input type="password" id="pwd" name="pwd">
+            <br>
+            <br>
+
+
+
+            <button id="button" onclick = "getYourDecision()">Submit</button>
+            <p id="g"></p>
+            <script>
+                
+                function getYourDecision() {
+                var userPreference = confirm("Do you want to save changes?");
+                if (userPreference == true) {
+                    userPreference = "Data saved successfully!";
+                } else {
+                    userPreference = "Save Cancelled!";
+                }
+                document.getElementById("g").innerHTML=userPreference;
+                }
+            </script>
+          </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Care</title>
+    <link rel="stylesheet" href="customer_care.css"/>
+</head>
+
+<body>
+<section id="main">    
+<div id="first"><h1><p>Customer Care</p></h1></div>
+</section>
+<div></div>
+<section id ="second">
+    <div><h3><p>Form</p></h3></div>
+    <div><h5><p>To register your complaint / Query / Feedback , kindly fill this form and submit.</p></h5></div>
+    <div>
+        <input type="radio" id="query" name="radio">
+        <label for="query">Query</label>
+
+        <input type="radio" id="complaint" name="radio">
+        <label for="complaints">Complaint</label>
+
+        <input type="radio" id="feedback" name="radio">
+        <label for="feedback">Feedback</label>
+    </div>
+
+    <div><p>
+        <label class="control-label"></label></p>
+        <textarea class="form-control" id="comments" rows="14" name="comments" required=""></textarea>
+    </div>
+
+    <button id="button" onclick = "getYourDecision()">Submit</button>
+    <p id="g"></p>
+    <script>
+    
+    function getYourDecision() {
+    var userPreference = confirm("Do you want to save changes?");
+    if (userPreference == true) {
+        userPreference = "Data saved successfully!";
+    } else {
+        userPreference = "Save Cancelled!";
+    }
+    document.getElementById("g").innerHTML=userPreference;
+    }
+    </script>
+
+
+</section>
+
+</body>
+
+</html>

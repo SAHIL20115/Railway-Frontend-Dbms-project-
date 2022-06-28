@@ -1,0 +1,82 @@
+
+body{
+    background: #009FFF;
+    background: linear-gradient(to right, #ec2F4B, #009FFF);
+}
+
+
+table, th, td {
+    border:3px solid black;
+    border-style:solid;
+    text-align: center;
+  }
+
+
+td{
+    font-weight: 200px;
+}
+
+
+
+#first{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+    }
+
+
+#header{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    background-color:aquamarine
+}
+
+
+table{
+    height: 500px;
+    width:75%;
+    height: min-content;
+    opacity: 0.7;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 16px 22px 51px -24px rgba(51, 50,52,0.48);
+    
+}
+
+
+.main{
+    text-align: center;
+    box-sizing: content-box;
+    border-style:groove;
+    width: 300px;
+    height: 100px;
+    margin-left: 450px;
+    background-color: aqua;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+#moving{
+    color:  white;
+    align-items: flex-start;
+}
+
+
+#intp{
+    text-align: center;
+    box-sizing: content-box;
+    border-style:groove;
+    width: 300px;
+    height: 100px;
+    margin-left: 450px;
+    margin-top: 50px;
+    background-color: aqua;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+#button{
+    background-color: red;
+    font-style: oblique;
+    font-weight: bold;
+}

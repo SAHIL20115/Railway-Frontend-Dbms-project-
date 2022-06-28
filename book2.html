@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="book2.css" />
+</head>
+<body>
+    <marquee direction="left" id="moving2">
+        Choose the number of Adults( above 12 years) &emsp; &emsp; &emsp; &emsp; Choose the number os children traveling( below 12 years) &emsp; &emsp; &emsp; &emsp; Choose the preferred seat
+    </marquee>
+
+    <p></p>
+    <section>
+        <div id="book"><h1>Booking Details</h1></div>
+        <hr size="6" color="red" >
+        <div id="fir"><p>1) Train number : &emsp; &emsp; &emsp; &emsp;&emsp; <span id="train_num"></span></p> </div>
+        <div id="sec">2) Adult: &emsp; &emsp; &emsp; &emsp;<form  onsubmit="return false" oninput="o.value = parseInt(a.value) + parseInt(b.value)">
+            <input id = "adult" name="a" type="number" step="any">
+          </form></div>
+
+          <div id="sec">3) Child: &emsp; &emsp; &emsp; &emsp;<form  onsubmit="return false" oninput="o.value = parseInt(a.value) + parseInt(b.value)">
+            <input id = "child" name="a" type="number" step="any">
+            </form></div>
+        
+        <div id="sec">
+            <p>4) Choose your preferred Seat:</p>
+            <form  action="/action_page.php">
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">Lower Berth</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">Middle Berth</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">Upper Berth</label><br>
+            <input type="radio" id="python" name="fav_language" value="Python">
+            <label for="python">Side Lower Berth</label><br>
+            <input type="radio" id="ruby" name="fav_language" value="Ruby">
+            <label for="ruby">Side Upper Berth</label><br>
+            </form> 
+        </div>
+
+
+        <button id="butto" onclick = alladlt()>Submit</button>
+
+        <script>
+            function butt() {
+             var userPrefer = confirm("Do you want to save changes?");
+            if (userPrefer == true) {
+                      window.open("payment.html", "_blank");
+                  } else {
+                     userPrefer = "Cancelled!";
+                 }
+                 }
+        </script>
+
+        <script>
+                            function passvalueadult(){
+                            var adlt = document.getElementById("adult").value;
+                            localStorage.setItem("textval",adlt);
+                            return false;
+                        }
+
+
+                            function passvaluechild(){
+                                var chld = document.getElementById("child").value;
+                                localStorage.setItem("valtext",chld);
+                                return false;
+                            }
+        </script>
+        
+        <script>
+            function alladlt(){
+                butt();
+                passvalueadult();
+                passvaluechild();
+            }
+        </script>
+        
+        
+
+    </section>
+    
+</body>
+</html>
+
+
+<script>
+    document.getElementById("train_num").innerHTML=localStorage.getItem("textvalue");
+</script>
+
+
+
+
+
+
+
+

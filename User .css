@@ -1,0 +1,104 @@
+#sect{
+    background-color: rgba(192, 212, 94, 0.607);
+    width: auto;
+    height: auto;
+    background-image: url("https://wallpaperboat.com/wp-content/uploads/2019/10/best-background-for-website-02.jpg");
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+
+
+
+#img{
+   text-align: center;
+}
+
+
+
+#name{
+    padding-left: 20px;
+    color: whitesmoke;
+    padding-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+#age{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+
+
+
+body{
+    background: #009FFF;
+    background: linear-gradient(to right, #ec2F4B, #009FFF);
+}
+
+
+
+
+#phone{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    padding-top: 20px;
+}
+
+
+
+#email{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    padding-top: 20px;
+}
+
+
+
+
+#book{
+    margin-top: 50px;
+    font-family: sans;
+    padding-left: 50px;
+    height: 100px;
+    width: 200px;
+    border-width:3px; 
+    border-style:solid;
+    background: rgba(228, 129, 129, 0.304);
+  }
+
+
+
+
+#query{
+    margin-left: 450px;
+    height: 100px;
+    width: 200px;
+    border-width:3px; 
+    border-style:solid;
+    background: rgba(228, 129, 129, 0.304);
+    text-align: center;
+}
+
+
+
+
+#cancel{
+    margin-left: 900px;
+    height: 100px;
+    width: 200px;
+    border-style: solid;
+    border-width: 3px;
+    background: rgba(228, 129, 129, 0.304);
+    text-align: center;
+}
+
+
+
+#moving{
+    color:  white;
+    align-items: flex-start;
+}
+

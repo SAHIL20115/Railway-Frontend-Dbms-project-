@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <marquee direction="left" id="moving">
+    Enter the card type &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; Enter the card number &emsp; &emsp; &emsp; Enter the card expiry date &emsp; &emsp; &emsp; Enter the CVV &emsp; &emsp; &emsp; Enter the amount calulated from right section.   
+    </marquee>
+
+    <h1>Payment Form</h1>
+    
+    <section>
+        
+        <div id="valuesa"><p><h3>Details</h3></p>
+        Cost of 1 Adult: &emsp; &emsp; &emsp; Rs. 50
+        <p></p>
+        Cost of 1 Child: &emsp; &emsp; &emsp; Rs. 25
+        <p></p>
+        Cost of <span id="adltvalues"></span> Adult: &emsp; &emsp; &emsp; Rs. 50 *<span id="advalues"></span>
+        <p></p>
+        Cost of <span id="valchild"></span> Child: &emsp; &emsp; &emsp; Rs. 25 *<span id="valchil"></span>
+        <p></p>
+        total cost is :
+        <p></p>
+         Rs. 50 *<span id="addvalues"></span> +  Rs. 25 *<span id="valchi"></span>
+
+
+
+    </div>
+    
+        <script>
+        
+        document.getElementById("adltvalues").innerHTML=localStorage.getItem("textval");
+        document.getElementById("advalues").innerHTML=localStorage.getItem("textval");
+        document.getElementById("valchild").innerHTML=localStorage.getItem("valtext");
+        document.getElementById("valchil").innerHTML=localStorage.getItem("valtext");
+        document.getElementById("addvalues").innerHTML=localStorage.getItem("textval");
+        document.getElementById("valchi").innerHTML=localStorage.getItem("valtext");
+        </script>
+
+    
+    </section>
+
+
+<section id="written"> 
+    <p><b> 1) Card Type:
+        <select name="card_type" id="card_type" required >
+            <option value="">Select a card type</option>
+            <option value="visa">VISA</option>
+            <option value="Master Card">Master Card</option>
+            <option value="Paypal ">Paypal</option>
+        </select>
+    </b></p>
+
+    <p><b>
+        2) Card number: <input type="number" name="card number" id="Card number" required placeholder="56*****" >
+    </b></p>
+
+    <p><b>
+        3) Card Expiry: <input type="date" name= "Card Expiry" id="Card Expiry" required >
+    </b></p>
+    
+    <p><b>
+        4) Cvv: <input type="password" name="cvv" id="cvv" required placeholder="***">
+    </b></p>
+
+    </form>
+
+    <p><b>
+        4) Amount <input type="number"  id="cvv" required placeholder="Rs. 123">
+    </b></p>
+
+    <br>
+        <button id="ID" type="submit" onclick=confirmation()> Pay now</button>
+
+        </section>   
+    
+
+</body>
+</html>
+
+<script>
+    function confirmation() {
+    var userPreference = confirm("Do you want to Pay?");
+    if (userPreference == true) {
+         window.open("loading.html", "_blank");
+    } else {
+        userPreference = "Cancelled!";
+    }
+    }
+</script>

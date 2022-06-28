@@ -1,0 +1,20 @@
+
+body{
+    background: #009FFF;
+    background: linear-gradient(to right, #ec2F4B, #009FFF);
+}
+
+
+
+p{
+    text-align: center;
+    margin-top: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bolder;
+}
+
+
+marquee{
+    color: white;
+}

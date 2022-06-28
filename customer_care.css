@@ -1,0 +1,44 @@
+
+body{
+    background: #009FFF;
+    background: linear-gradient(to right, #ec2F4B, #009FFF);
+}
+
+
+#first{
+    width: 600px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding-left: 140px;
+    padding-top: 35px;
+}
+
+
+#main{
+    height: auto;
+    border-width:2px; 
+    border-style:solid;
+    background-image: url("https://th.bing.com/th/id/OIP.w6FfJoabs_UyU2zyKA6jZgHaDe?pid=ImgDet&rs=1");
+}
+
+
+#second{
+    width: 600px;
+    height: auto;
+    border-width:2px; 
+    border-style:solid;
+    padding-left: 35px;
+}
+
+
+#button{
+    background-color: red;
+}
+
+
+#form-control{
+    width: 10px;
+}
+
+
+
