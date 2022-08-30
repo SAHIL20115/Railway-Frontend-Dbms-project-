@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="User .css" />
+</head>
+<body>
+    <marquee direction="left" id="moving">
+        <p>For Booking Ticket click on Book section;  &emsp; &emsp; &emsp;   For Enquiry/Complaint/Feedback click on Customer care section;  &emsp; &emsp; &emsp;      For Cancellation of ticket click on Cancel section ;) </p>
+        </marquee>
+
+    <section id="sect">
+        <div id="name"><H3>Name: &emsp;&emsp;<span id="result"></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Date of Birth:</H3></div>
+        <div id="img"><img src="https://th.bing.com/th/id/OIP.iR-L3h8p33r7B8Dn80Lh3AHaHa?pid=ImgDet&rs=1" height="70px" width=auto></div>
+        <div id="age"><H3>Age: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Aadhar Card:</H3></div>
+    </section>
+
+
+
+    <div id="phone"><h3>Phone Num: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Gender:</span></h3></div>
+    <div id="email"><h3>Email:  &emsp;&emsp; <span id="em"></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Address:</h3></div>
+
+
+    <div id="book"><h2><a href="book.html">Book Ticket</a></h2></div>
+
+    
+    <div id="query"><h2><p><a href="file:///C:/Users/kumar/OneDrive/Desktop/xyz/customer_care.html">Customer Care</a></p></h2></div>  
+    
+
+    <div id = "cancel"><h2><a href="https:google.com">Cancel Ticket</a></h2></div>
+
+
+
+
+    <script>
+        document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+   </script>
+
+    <script>
+        document.getElementById("em").innerHTML=localStorage.getItem("emailval");
+    </script>
+
+
+
+</body>
+</html>
